@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Job Search App</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="titulo">EMPREGOS APP</div>
+        <div class="nav">
+          <ul class="navul">
+            <li><a id="inicio">INICIO</a></li>
+            <li><a id="sobre">SOBRE</a></li>
+            <li><a id="contato">CONTATO</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="encontre">Encontre hoje seu emprego!</div>
+
+      <div class="busca">
+        <span class="estado"> Escolha um estado:</span>
+        <select name="" id="select" value="">
+          <option value="MinasGerais">Minas Gerais</option>
+          <option value="SãoPaulo">Sâo Paulo</option>
+          <option value="RiodeJaneiro">Rio de Janeiro</option>
+          <option value="Paraiba">Paraiba</option>
+        </select>
+      </div>
+
+      <div class="busca03">
+        <button id="enviar" class="enviar">Procurar!</button>
+      </div>
+    </div>
+
+    <div class="container02">
+      <div></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    document
+      .getElementById("enviar")
+      .addEventListener("click", function getOption() {
+        selectElement = document.querySelector("#select");
+        output = selectElement.value;
+        if (output == "MinasGerais") {
+          window.open("http://localhost:3000/jobsminasgerais");
+        }
+        if (output == "SãoPaulo") {
+          window.open("http://localhost:3000/jobssaopaulo");
+        }
+        if (output == "RiodeJaneiro") {
+          window.open("http://localhost:3000/jobsriodejaneiro");
+        }
+        if (output == "Paraiba") {
+          window.open("http://localhost:3000/jobsparaiba");
+        }
+      });
+
+    document
+      .getElementById("inicio")
+      .addEventListener("click", function Inicio() {
+        window.open("http://localhost:3000/");
+      });
+
+    document
+      .getElementById("sobre")
+      .addEventListener("click", function Sobre() {
+        window.open("http://localhost:3000/sobre");
+      });
+
+    document
+      .getElementById("contato")
+      .addEventListener("click", function Contato() {
+        window.open("http://localhost:3000/contato");
+      });
+  </script>
+</html>

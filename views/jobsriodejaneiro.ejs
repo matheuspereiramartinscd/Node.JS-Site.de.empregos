@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Job Search App</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="titulo">EMPREGOS APP</div>
+        <div class="nav">
+          <ul class="navul">
+            <li><a id="inicio">INICIO</a></li>
+            <li><a id="sobre">SOBRE</a></li>
+            <li><a id="contato">CONTATO</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </header>
+    <div class="containerjobs" id="containerjobs">
+      <div class="jobbox">
+        <div class="jobtitulo">
+          <%= JSON.stringify(jobsriodejaneiro[0].nome) %>
+        </div>
+        <div class="jobdescricao">
+          <%= JSON.stringify(jobsriodejaneiro[0].descricao) %>
+        </div>
+        <div class="salario">
+          Salario: <%= JSON.stringify(jobsriodejaneiro[0].salario) %>
+        </div>
+        <div class="vermais"><button class="detalhes">Detalhes</button></div>
+      </div>
+
+      <div class="jobbox">
+        <div class="jobtitulo">
+          <%= JSON.stringify(jobsriodejaneiro[1].nome) %>
+        </div>
+        <div class="jobdescricao">
+          <%= JSON.stringify(jobsriodejaneiro[1].descricao) %>
+        </div>
+        <div class="salario">
+          Salario: <%= JSON.stringify(jobsriodejaneiro[1].salario) %>
+        </div>
+        <div class="vermais"><button class="detalhes">Detalhes</button></div>
+      </div>
+
+      <div class="jobbox">
+        <div class="jobtitulo">
+          <%= JSON.stringify(jobsriodejaneiro[2].nome) %>
+        </div>
+        <div class="jobdescricao">
+          <%= JSON.stringify(jobsriodejaneiro[2].descricao) %>
+        </div>
+        <div class="salario">
+          Salario: <%= JSON.stringify(jobsriodejaneiro[2].salario) %>
+        </div>
+        <div class="vermais"><button class="detalhes">Detalhes</button></div>
+      </div>
+
+      <div class="jobbox">
+        <div class="jobtitulo">
+          <%= JSON.stringify(jobsriodejaneiro[3].nome) %>
+        </div>
+        <div class="jobdescricao">
+          <%= JSON.stringify(jobsriodejaneiro[3].descricao) %>
+        </div>
+        <div class="salario">
+          Salario: <%= JSON.stringify(jobsriodejaneiro[3].salario) %>
+        </div>
+        <div class="vermais"><button class="detalhes">Detalhes</button></div>
+      </div>
+
+      <div class="clear"></div>
+    </div>
+    <script>
+      document
+        .getElementById("inicio")
+        .addEventListener("click", function Inicio() {
+          window.open("http://localhost:3000/");
+        });
+
+      document
+        .getElementById("sobre")
+        .addEventListener("click", function Sobre() {
+          window.open("http://localhost:3000/sobre");
+        });
+
+      document
+        .getElementById("contato")
+        .addEventListener("click", function Contato() {
+          window.open("http://localhost:3000/contato");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Job Search App</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="titulo">EMPREGOS APP</div>
+        <div class="nav">
+          <ul class="navul">
+            <li><a id="inicio">INICIO</a></li>
+            <li><a id="sobre">SOBRE</a></li>
+            <li><a id="contato">CONTATO</a></li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </header>
+    <div class="containerjobs03">
+      <div class="jobbox02">
+        <div class="jobtitulo02">Entre em contato!</div>
+        <div class="jobdescricao02">
+          <div><b>Email:</b> matheuspereiramartins1993@gmail.com</div>
+          <div><b>Telefone:</b> (31) 98480-0251</div>
+          <div><b>WhatsApp:</b> +55 (31) 98480-0251</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("inicio")
+        .addEventListener("click", function Inicio() {
+          window.open("http://localhost:3000/");
+        });
+
+      document
+        .getElementById("sobre")
+        .addEventListener("click", function Sobre() {
+          window.open("http://localhost:3000/sobre");
+        });
+
+      document
+        .getElementById("contato")
+        .addEventListener("click", function Contato() {
+          window.open("http://localhost:3000/contato");
+        });
+    </script>
+  </body>
+</html>
